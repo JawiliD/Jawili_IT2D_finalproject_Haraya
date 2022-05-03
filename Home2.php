@@ -6,7 +6,7 @@
         <meta name="author" content="" />
         <title>Haraya</title>        
       
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style_02.css">
     </head>
 
     <body >
@@ -20,29 +20,39 @@
                         <li><a href="#">Directory</a></li>
                         <li><a href="#">Events</a></li>                    
                     </ul>
+
+                    <table class="icons">
+                        <tr>
+                            <th>
+                                <a href=""><img src="images/icon/pencil.png"></a>
+                            </th>
+                            <th>
+                                <a href=""><img src="images/icon/shopping-bag.png"></a>
+                            </th>
+                            <th>
+                                <button onclick="myFunction()" class="dropbtn"><img  src="images/icon/user.png"></button>
+                            </th>
+                        </tr>
+                        
+                    </table>
                     <input type="text" placeholder="Search..">
-                    <button onclick="openForm()">Sign Up/Login</button>             
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Subscribed</a>
+                        <a href="#">Coins</a>
+                        <a href="#">Invites</a>
+                        <a href="#">Account</a>
+                        <a href="#">Works</a>
+                        <a href="#">Logout</a>
+                        
+                    </div>                
                 
                 </div>
-                <div class="form-popup" id="myForm">
-                    <form class="form">
-                        <img class="close"  onclick="closeForm()" src="images/icon/close-button.png">
-                        <h4 id="greeting">Log In and enjoy special features</h4>
-                        <input type="text" placeholder="Email Address">
-                        <input type="password" placeholder="password">
-                        <a href="#"><button>Sign Up</button></a>
-                        <button type="submit" id="login">Log In</button>
-                        <a href="#" id="forgot_psw">Forgot Password?</a>
-                        <h3>Or Log In With</h3>                        
-                        <img id="gif_01"src="images/gif_01.gif">
-                        <a href="#"><img id="fb" src="images/icon/facebook.png"></a>
-                        <a href="#"><img id="gmail" src="images/icon/gmail.png"></a>
-                        <a href="#"><img id="twitter"src="images/icon/twitter.png"></a>
-                    </form>
-                </div>
+
+
+                
                 <div class="today_pick">
                     <h2>Today's Pick</h2>
-                    <a href=""><img src="images/covers/photo_1.jpg"></a>
+                    <a href="#"><img src="images/covers/photo_1.jpg"></a>
                     <img src="images/covers/photo_2.jpg">
                     <img src="images/covers/photo_3.png">
                     <img src="images/covers/photo_4.png">
@@ -82,7 +92,9 @@
                         </tr>
                     </table>
                     <button>Show more</button>
-                </div>               
+                </div> 
+
+                        
                 
               
             </div>         
@@ -90,7 +102,7 @@
 
                 
             
-            <div class="py-3 bg-success" id="footer">
+            <div class="footer">
                 <p>&copy; 2022 Haraya</p>
 
                 
@@ -100,16 +112,28 @@
 
         </div>
         <script>
-            function openForm(){
-                document.getElementById("myForm").style.display = "block";
-            }
-            function closeForm(){
-                document.getElementById("myForm").style.display = "none";
-            }
-        </script>
-         <!-- Bootstrap core JS-->
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+            
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+
+</script>  
+    
     	
     </body>
