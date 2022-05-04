@@ -226,8 +226,9 @@ body{
   display: block;
   }
 
-  .dropdown-content a:hover{
+ .dropdown-content a:hover{
   	background-color: orange;
+
 
   }
 
@@ -449,3 +450,45 @@ body{
 .load_more_1:hover{
 	background-color: gray;
 }
+.events h1{
+	padding: 20px 100px;
+}
+
+.events table {
+	
+	margin-top: 30px;
+	margin-bottom: 20px;
+	width: 100%;
+	
+}
+.events table tr td{
+	width: 500px;
+	border: 2px dashed orange;
+	padding-bottom: 50px;
+	
+}
+.events table tr td img{
+	margin: 0px;
+	padding: 50px 0px 0px 50px;
+
+
+}
+.events table tr td p{
+	width: 200px;
+	text-align: justify;
+	float: right;
+	padding: 50px 40px 0px 20px;
+}
+.events table tr td button{
+	margin: 0px 100px 0px 0px;
+	padding: 10px 20px;
+	background-color: gray;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	float: right;
+}
+
+.events table tr td button:hover{
+	background-color: orange;
+	}
