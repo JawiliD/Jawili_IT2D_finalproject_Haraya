@@ -15,10 +15,10 @@
                     <img id="header" src="images/banner.png">
                     <img id="logo" src="images/logo.png">
                     <ul>                        
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Discover</a></li>
-                        <li><a href="#">Directory</a></li>
-                        <li><a href="#">Events</a></li>                    
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="discover.php">Discover</a></li>
+                        <li><a href="directory.php">Directory</a></li>
+                        <li><a href="events.php">Events</a></li>                    
                     </ul>
                     <input type="text" placeholder="Search..">
                     <button onclick="openForm()">Sign Up/Login</button>             

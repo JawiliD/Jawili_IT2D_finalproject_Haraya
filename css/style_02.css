@@ -3,6 +3,7 @@ body{
 	margin: 0px;
 	padding: 0px;
 }
+/* Home css (index) */
 .wrapper{	
 	background-color: lightgray;	
 	width: 1100px;		
@@ -79,7 +80,7 @@ body{
 	background-color: yellow;
 	border-radius: 5px;
 }
-.icons tr th button:hover{
+.icons tr th button:hover{	
 	background-color: orange;
 }
 
@@ -217,6 +218,7 @@ body{
   	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   	z-index: 1;
 }
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -244,10 +246,206 @@ body{
 
 .show {display: block;}
 
+/*discover css */
+
+.genre{
+	margin: 0px;
+	padding: 0px;
+	
+}
+.genre h2{
+	margin: 0px;
+	padding: 30px 0px 0px 50px;
+	font-size: 40px;
+}
+
+.genre h3{
+	margin: 0px;
+	padding: 20px 0px 0px 60px;
+	font-size: 25px;
+}
+.genre form{
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+.genre form table{
+	margin: 0px;
+	padding: 20px 50px 30px 100px;
+	
+}
+
+
+.genre form table tr td{
+	padding: 10px 100px 0px 20px;
+	margin: 0px;
+	
+}
+#search{
+	margin: 0px 0px 0px 480px;
+	padding: 10px 20px;
+	border-radius: 20px;
+	border: none;
+	background-color: gray;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#search:hover{
+	background-color: orangered;
+}
+.succession{
+	padding: 20px;
+}
+
+
+.succession select{
+	float: right;	
+	padding-top: 20px;
+	margin-right: 100px;
+	margin-bottom: 30px;	
+	padding: 10px;
+
+}
+#comics table {
+	
+	margin-top: 30px;
+	margin-bottom: 20px;
+	width: 100%;
+	
+}
+#comics table tr td{
+	width: 500px;
+	border: 2px dashed orange;
+	padding-bottom: 50px;
+	
+}
+#comics table tr td img{
+	margin: 0px;
+	padding: 50px 0px 0px 50px;
+
+
+}
+#comics table tr td p{
+	width: 200px;
+	text-align: justify;
+	float: right;
+	padding: 50px 40px 0px 20px;
+}
+.load_more{
+	padding: 10px 15px;
+	margin-left: 490px;
+	background-color: orangered;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	border-radius: 20px;
+}
+.load_more:hover{
+	background-color: gray;
+}
+
 #footer{
-	clear: both;	
+	
+	clear: both;
 	padding: 10px;
 	text-align: center;
 }
 
+/* directory css */
 
+.letters h1{
+	margin: 0px;
+	padding: 30px 0px 0px 70px;
+}
+.first_row{
+	margin: 0px;
+	padding: 50px 0px 0px 50px;
+}
+
+.first_row tr td{
+	margin: 50px;
+	padding: 10px 20px;
+	border-right: 5px solid orange;
+}
+
+.first_row tr td a{
+	text-decoration: none;
+	color: black;
+	background-color: lightgray;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.first_row tr td a:hover{	
+	color: orange;
+	padding: 0px;
+	margin: 0px;
+}
+
+.second_row{
+	margin: 0px;
+	padding: 10px 0px 10px 150px;
+}
+
+.second_row tr td{
+	margin: 50px;
+	padding: 10px 20px;
+	border-right: 5px solid orange;
+}
+
+.second_row tr td a{
+	text-decoration: none;
+	color: black;
+	background-color: lightgray;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.second_row tr td a:hover{	
+	color: orange;
+	padding: 0px;
+	margin: 0px;
+}
+
+.comics_1 table {
+	
+	margin-top: 30px;
+	margin-bottom: 20px;
+	width: 100%;
+	
+}
+.comics_1 table tr td{
+	width: 500px;
+	border: 2px dashed orange;
+	padding-bottom: 50px;
+	
+}
+.comics_1 table tr td img{
+	margin: 0px;
+	padding: 50px 0px 0px 50px;
+
+
+}
+.comics_1 table tr td p{
+	width: 200px;
+	text-align: justify;
+	float: right;
+	padding: 50px 40px 0px 20px;
+}
+.load_more_1{
+	padding: 10px 15px;
+	margin-left: 490px;
+	background-color: orangered;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	border-radius: 20px;
+}
+.load_more_1:hover{
+	background-color: gray;
+}

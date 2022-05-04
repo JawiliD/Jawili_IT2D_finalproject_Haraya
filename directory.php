@@ -42,41 +42,67 @@
                         <a href="#">Invites</a>
                         <a href="#">Account</a>
                         <a href="#">Works</a>
-                        <a href="#">Logout</a>
-                        
-                    </div>             
-                
-
+                        <a href="#">Logout</a>                        
+                    </div>         
                 </div>
 
-
-                
-                <div class="today_pick">
-                    <h2>Today's Pick</h2>
-                    <a href="#"><img src="images/covers/photo_1.jpg"></a>
-                    <img src="images/covers/photo_2.jpg">
-                    <img src="images/covers/photo_3.png">
-                    <img src="images/covers/photo_4.png">
-                </div>
-                <div class="latest_update">
-                    <h2>Latest Update</h2>
+                <div class="letters"> 
+                <h1>Directory</h1>                   
+                    <table class="first_row">
+                        <tr>
+                            <td><a href="#">All</a></td>
+                            <td><a href="#">A</a></td>
+                            <td><a href="#">B</a></td>
+                            <td><a href="#">C</a></td>
+                            <td><a href="#">D</a></td>
+                            <td><a href="#">E</a></td>
+                            <td><a href="#">F</a></td>
+                            <td><a href="#">G</a></td>
+                            <td><a href="#">H</a></td>
+                            <td><a href="#">I</a></td>
+                            <td><a href="#">J</a></td>
+                            <td><a href="#">K</a></td>
+                            <td><a href="#">L</a></td>
+                        </tr>
+                    </table>
+                    <table class="second_row">
+                        <tr>
+                            <td><a href="#">M</a></td>
+                            <td><a href="#">N</a></td>
+                            <td><a href="#">O</a></td>
+                            <td><a href="#">P</a></td>
+                            <td><a href="#">Q</a></td>
+                            <td><a href="#">R</a></td>
+                            <td><a href="#">S</a></td>
+                            <td><a href="#">T</a></td>
+                            <td><a href="#">U</a></td>
+                            <td><a href="#">V</a></td>
+                            <td><a href="#">W</a></td>
+                            <td><a href="#">X</a></td>
+                            <td><a href="#">Y</a></td>
+                            <td><a href="#">Z</a></td>
+                        </tr>
+                    </table>
+                    
+                </div >
+                <div class="comics_1">
                     <table>
                         <tr>
-                            <td id="">
+                            <td >
                                 <img src="images/covers/photo_5.jpg">
                                 <p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>
                             </td>
-                            <td id="">
+                            <td >
                                 <img src="images/covers/photo_6.jpg">
                                 <p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>
                             </td>
                         </tr>
                         <tr>
-                            <td id="">
+                            <td >
                                 <img src="images/covers/photo_7.jpg">
                                 <p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>
                             </td>
-                            <td id="">
+                            <td >
                                 <img src="images/covers/photo_8.jpg">
                                 <p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>
                             </td>
@@ -91,26 +117,17 @@
                                 <p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>
                             </td>
                         </tr>
-                    </table>
-                    <button>Show more</button>
-                </div> 
+                        </table>
+                        <button type="submit" class="load_more_1">Load More</button>
+                </div>
 
-                        
-                
-              
-            </div>         
-            
 
-                
-            
+             
+            </div>       
+
             <div id="footer">
-                <p>&copy; 2022 Haraya</p>
-
-                
-                
+                <p>&copy; 2022 Haraya</p>  
             </div>
-
-
         </div>
         <script>
             
