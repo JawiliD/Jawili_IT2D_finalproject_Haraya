@@ -207,6 +207,8 @@ body{
 #forgot_psw{
 	margin: 0px;
 	padding-left: 120px;
+	text-decoration: none;
+	color: orange;
 	
 }
 
@@ -242,4 +244,70 @@ body{
 	clear: both;	
 	padding: 10px;
 	text-align: center;
+}
+/* Sign Up */
+.signup img{
+	margin: 0px;
+	padding: 50px;
+	padding-left: 80px;
+	max-width: 700px;
+}
+.form_1{
+	float: right;
+	background-color: darkgray;
+	margin: 20px 80px 20px 0px;
+	width: 450px;
+	height: 670px;
+	border-radius: 20px;
+}
+.form_1 h2{
+	margin: 0px;
+	padding: 20px 0px 0px 20px;
+}
+.form_2{
+	background-color: lightgray;	
+	height: 380;
+	margin: 20px;
+	padding: 10px;
+	border-radius: 20px;
+}
+.form_2 p{
+	padding: 10px 0px 0px 50px;
+	margin: 0px;
+}
+.form_2 input{
+	margin: 20px 0px 0px 50px;
+	padding: 5px;
+	border-radius: 20px;
+	background-color: darkgray;
+	border: none;
+}
+#code{
+	background-color: ;
+}
+
+.terms{
+	margin: 0px;
+	padding: 20px;
+	text-align: center;
+	
+}
+.form_2 button{
+	padding: 10px;
+	background-color: darkgray;
+	color: white;
+	margin: 20px 0px 0px 150px;
+	border-radius: 20px;
+	border: none;
+}
+.form_2 button:hover{
+	background-color: orangered;
+}
+.form_2 h4{
+	text-align: center;
+}
+.form_2 img{
+	margin: 0px;
+	padding: 0px 0px 0px 70px;
+
 }
