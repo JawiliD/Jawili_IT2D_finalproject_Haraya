@@ -43,6 +43,7 @@
                 </div>
 
                 <div class="signup">
+                    <form>
                         <img src="images/covers/photo_16.jpg">
                         <div class="form_1">
                             <h2>Sign Up</h2>
@@ -66,6 +67,7 @@
                             </div>
                             
                         </div>
+                        </form>
                     </div>   
                 
                 
