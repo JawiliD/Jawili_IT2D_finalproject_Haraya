@@ -311,3 +311,44 @@ body{
 	padding: 0px 0px 0px 70px;
 
 }
+
+/* welcome */
+.welcome{
+	width: 100%;
+	height: 700px;
+	
+
+}
+.welcome h2{
+	font-family: Peinture Fraiche;
+	font-size: 80px;
+	color: gray;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 0px;
+	margin: 0px;
+}
+.welcome ul li{
+	list-style-type: none;
+}
+#logo_1{
+	padding: 30px 0px 0px 350px;
+	margin: 0px;
+}
+#haraya{
+	padding: 10px 0px 0px 425px;
+}
+#login_btn{
+	background-color: gray;
+	color: white;
+	font-size: 20px;
+	padding: 10px 20px;
+	border-radius: 20px;
+	border: 0px;
+	margin: 20px 0px 0px 525px;
+
+}
+#login_btn:hover{
+	background-color: orangered;
+}
+	

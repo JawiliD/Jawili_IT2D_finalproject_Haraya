@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['paragraph'] = "<p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>";
 
 
 ?>
@@ -58,36 +60,40 @@
                             <td id="">
                                 <?php
                                 echo "<img src='images/covers/photo_5.jpg'>";                                
-                                echo "<p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>";?>
+                                echo $paragraph;?>
                             </td>
                             <td id="">
                                 <?php
                                 echo "<img src='images/covers/photo_6.jpg'>";                                
-                                echo "<p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>";?>
+                                echo $paragraph;?>
+                            </td>
                             </td>
                         </tr>
                         <tr>
                             <td id="">
                                 <?php
                                 echo "<img src='images/covers/photo_7.jpg'>";                                
-                                echo "<p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>";?>
+                                echo $paragraph;?>
+                            </td>
                             </td>
                             <td id="">
                                 <?php
                                 echo "<img src='images/covers/photo_8.jpg'>";                                
-                                echo "<p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>";?>
+                                echo $paragraph;?>
                             </td>
                         </tr>
                         <tr>
                             <td id="">
                                 <?php
                                 echo "<img src='images/covers/photo_11.jpg'>";                                
-                                echo "<p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>";?>
+                                echo $paragraph;?>
+                            </td>
                             </td>
                             <td id="">
                                 <?php
                                 echo "<img src='images/covers/photo_10.jpg'>";                                
-                                echo "<p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>";?>
+                                echo $paragraph;?>
+                            </td>
                             </td>
                         </tr>
                     </table>
