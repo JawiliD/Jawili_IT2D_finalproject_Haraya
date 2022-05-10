@@ -1,11 +1,5 @@
 <?php
-    session_start();
-
-        $_SESSION['ses_email_add'] = 'email';
-        $_SESSION['ses_password'] = 'password';
-        $_SESSION['ses_nickname'] = 'nickname';
-        $_SESSION['ses_Code'] = 'code';
-
+    session_start();       
     
 
     if (isset($_REQUEST['signup'])) {
@@ -57,7 +51,7 @@
                 </div>                
 
                 <div class="signup">
-                    <form method="POST">
+                    <form method="POST">                       
                         <img src="images/covers/photo_16.jpg">
                         <div class="form_1">
                             <h2>Sign Up</h2>

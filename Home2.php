@@ -58,7 +58,7 @@
                     <img src="images/covers/photo_3.png">
                     <img src="images/covers/photo_4.png">
                 </div>
-                <
+                
                 <div class="latest_update">
                     <h2>Latest Update</h2>
                     <table>

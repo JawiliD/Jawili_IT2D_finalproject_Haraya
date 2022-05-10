@@ -1,16 +1,36 @@
 <?php
-        session_start();
+    session_start();   
+    
+
     $xml=simplexml_load_file('files/account.xml');
     $email = $xml->email_address;
     $pass = $xml->Password;
+    $_nickname = $xml->nick_name;
+    $_code = $xml->Code;
+
+    $_SESSION['ses_email_add'] = $email;
+    $_SESSION['ses_password'] = $pass;
+    $_SESSION['ses_nickname'] = $_nickname;
+    $_SESSION['ses_Code'] = $_code;
+
+    $url_add = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 
     if (isset($_REQUEST['login'])=== true) {
 
-       if (isset($_REQUEST['login_email']) == $email && $_REQUEST['login_pass'] == $pass) 
+       if ($_REQUEST['login_email'] != $email) {
+           header("Location: ".$url_add."?notexist");
+       }
+       if ($_REQUEST['login_email'] != $email && $_REQUEST['login_pass'] == $pass) {
+           header("Location: ".$url_add."?notexist");
+       }
+
+        elseif ($_REQUEST['login_email'] == $email && $_REQUEST['login_pass'] != $pass) {
+            header("Location: ".$url_add."?wrongpass");
+        }
+        elseif (isset($_REQUEST['login_email']) == $email && $_REQUEST['login_pass'] == $pass) 
        {
         header('Location: Home2.php');
         }
-        
     }
 ?>
 <!DOCTYPE html>
@@ -41,9 +61,22 @@
                 
                 </div>
                 <div method="POST" class="form-popup" id="myForm">
-                    <form class="form">
+                    <form class="form">                        
                         <img class="close"  onclick="closeForm()" src="images/icon/close-button.png">
                         <h4 id="greeting">Log In and enjoy special features</h4>
+                        <?php
+                        if (isset($_REQUEST['notexist']) === true) 
+                        {
+                            echo"<div style='background-color:red;color:white;padding:10px;width:200px;margin:0px 65px;opacity:0.5;'> Username does not exist...</div>";
+                            echo "<body onload='openForm();'></body>";
+                        }
+                        else if (isset($_REQUEST['wrongpass']) === true) 
+                        {
+                            echo"<div style='background-color:orange;color:white;padding:10px;width:200px;margin:0px 65px;opacity:0.5;'> Incorrect password...</div>";
+                            echo "<body onload='openForm();'></body>";
+                        }
+
+                        ?>
                         <input name="login_email" type="text" placeholder="Email Address">
                         <input name="login_pass" type="password" placeholder="password">
                         <a href="#"><button>Sign Up</button></a>
