@@ -1,3 +1,9 @@
+<?php
+        if (isset($_REQUEST['preview'])=== true)
+        {
+            header('Location: chapter1.php');
+        }
+    ?>
 <!DOCTYPE html>
 <head>
         <meta charset="utf-8" />
@@ -25,10 +31,7 @@
                         <tr>
                             <th>
                                 <a href="Home3.php"><img src="images/icon/pencil.png"></a>
-                            </th>
-                            <th>
-                                <a href=""><img src="images/icon/shopping-bag.png"></a>
-                            </th>
+                            </th>                            
                             <th>
                                 <button onclick="myFunction()" class="dropbtn"><img  src="images/icon/user.png"></button>
                             </th>
@@ -36,12 +39,9 @@
                         
                     </table>
                     <input type="text" placeholder="Search..">
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Subscribed</a>
-                        <a href="#">Coins</a>
-                        <a href="#">Invites</a>
+                    <div id="myDropdown" class="dropdown-content">                        
                         <a href="#">Account</a>
-                        <a href="#">Works</a>
+                        <a href="Home3.php">Works</a>
                         <a href="#">Logout</a>
                         
                     </div>             
@@ -61,7 +61,7 @@
                                 <td>
                                     <img src="images/ep3.png">
                                     <h4>Ep 3</h4>
-                                    <button>Preview</button>
+                                    <button>View</button>
                                                                         
                                 </td>                                
                             </tr>
@@ -69,7 +69,7 @@
                                 <td>
                                     <img src="images/ep2.jpg">
                                     <h4>Ep 2</h4>
-                                    <button>Preview</button>
+                                    <button>View</button>
                                                                         
                                 </td>                                
                             </tr>
@@ -77,7 +77,7 @@
                                 <td>
                                     <img src="images/ep1.png">
                                     <h4>Ep 1</h4>
-                                    <button>Preview</button>
+                                    <a href="chapter1.php"><button  name="preview" method="POST">View</button> </a>                                  
                                                                         
                                 </td>                                
                             </tr>

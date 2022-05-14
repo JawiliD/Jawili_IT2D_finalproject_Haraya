@@ -25,10 +25,7 @@
                         <tr>
                             <th>
                                 <a href="Home3.php"><img src="images/icon/pencil.png"></a>
-                            </th>
-                            <th>
-                                <a href=""><img src="images/icon/shopping-bag.png"></a>
-                            </th>
+                            </th>                            
                             <th>
                                 <button onclick="myFunction()" class="dropbtn"><img  src="images/icon/user.png"></button>
                             </th>
@@ -36,12 +33,9 @@
                         
                     </table>
                     <input type="text" placeholder="Search..">
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Subscribed</a>
-                        <a href="#">Coins</a>
-                        <a href="#">Invites</a>
+                    <div id="myDropdown" class="dropdown-content">                        
                         <a href="#">Account</a>
-                        <a href="#">Works</a>
+                        <a href="Home3.php">Works</a>
                         <a href="#">Logout</a>
                         
                     </div>             
@@ -53,7 +47,7 @@
                 
                 <div class="today_pick">
                     <h2>Today's Pick</h2>
-                    <a href="#"><img src="images/covers/photo_1.jpg"></a>
+                    <a href="webtoon.php"><img src="images/covers/photo_1.jpg"></a>
                     <img src="images/covers/photo_2.jpg">
                     <img src="images/covers/photo_3.png">
                     <img src="images/covers/photo_4.png">

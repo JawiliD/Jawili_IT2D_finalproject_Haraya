@@ -1,18 +1,7 @@
 <?php
-session_start();   
+    session_start(); 
     
-
-    $xml=simplexml_load_file('files/account.xml');
-    $email = $xml->email_address;
-    $pass = $xml->Password;
-    $_nickname = $xml->nick_name;
-    $_code = $xml->Code;
-
-    $_SESSION['ses_email_add'] = $email;
-    $_SESSION['ses_password'] = $pass;
-    $_SESSION['ses_nickname'] = $_nickname;
-    $_SESSION['ses_Code'] = $_code;
-
+    
     $url_add = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 
     if (isset($_REQUEST['login'])=== true) {
@@ -80,7 +69,7 @@ session_start();
                         <input type="text" placeholder="Email Address">
                         <input type="password" placeholder="password">
                         <a href="signup.php"><button>Sign Up</button></a>
-                        <button type="submit" name="login">Log In</button>
+                        <button id="login" type="submit" name="login">Log In</button>
                         <a href="#" id="forgot_psw">Forgot Password?</a>
                         <h3>Or Log In With</h3>                        
                         <img id="gif_01"src="images/gif_01.gif">
@@ -91,7 +80,7 @@ session_start();
                 </div>
                 <div class="today_pick">
                     <h2>Today's Pick</h2>
-                    <a href=""><img src="images/covers/photo_1.jpg"></a>
+                    <a href="#"><img src="images/covers/photo_1.jpg"></a>
                     <img src="images/covers/photo_2.jpg">
                     <img src="images/covers/photo_3.png">
                     <img src="images/covers/photo_4.png">

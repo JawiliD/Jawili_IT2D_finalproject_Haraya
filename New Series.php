@@ -30,7 +30,7 @@
                     <table class="icons">
                         <tr>
                             <th>
-                                <a href=""><img src="images/icon/book.png"></a>
+                                <a href="Home2.php"><img src="images/icon/book.png"></a>
                             </th>
                             <th>
                                 <button onclick="myFunction()" class="dropbtn"><img  src="images/icon/user.png"></button>
