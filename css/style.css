@@ -25,7 +25,7 @@ body{
 	position: absolute;
 	margin: 0px;
 	padding: 0px;
-	right: 150px;
+	right: 200px;
 	top: 10px;
 }
 .nav ul{
@@ -63,12 +63,12 @@ body{
 .nav input{
 	position: absolute;
 	border-radius: 20px;
-	right: 100px;
+	right: 150px;
 	top: 170px;
 }
 .nav button{
 	position: absolute;
-	right: 100px;
+	right: 150px;
 	top: 20px;
 	background-color: gray;
 	color: white;

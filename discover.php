@@ -1,3 +1,29 @@
+<?php
+    session_start();       
+    
+
+    if (isset($_REQUEST['search_btn'])) {
+
+        $discovers = simplexml_load_file('files/discover.xml');
+
+
+        $discover = $discovers->addChild('discover');
+
+        $discover->addChild('genre', $_REQUEST['check_genre']);
+        $discover->addChild('language', $_REQUEST['check_language']);
+        $discover->addChild('status', $_REQUEST['check_status']);        
+
+        $dom = new DomDocument();
+        $dom->preserveWhiteSpace = false;
+        $dom->formatOutput = true;
+        $dom->loadXML($discover->asXML());
+        $dom->save('files/discover.xml');       
+        
+
+
+
+    }
+?>
 <!DOCTYPE html>
 <head>
         <meta charset="utf-8" />
@@ -51,120 +77,120 @@
                 <div class="genre">
                     <h2>Discover</h2>
                     <h3>Genre</h3>
-                    <form>
+                    <form method="GET">
                         <table>
                             <tr>
                                 <td>
-                                    <input type="checkbox" id="all" name="all1" value="All">
+                                    <input type="checkbox" id="all" name="check_genre[]" value="All">
                                     <label for="all1"> All</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="cooking" name="cooking1" value="Cooking">
+                                    <input type="checkbox" id="cooking" name="check_genre[]" value="Cooking">
                                     <label for="cooking1"> Cooking</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="historiccal" name="historical1" value="Historical">
+                                    <input type="checkbox" id="historiccal" name="check_genre[]" value="Historical">
                                     <label for="historical1"> Historical</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="psychological" name="psychological1" value="Psychological">
+                                    <input type="checkbox" id="psychological" name="check_genre[]" value="Psychological">
                                     <label for="psychological1"> Psychological</label>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="checkbox" id="action" name="action1" value="Action">
+                                    <input type="checkbox" id="action" name="check_genre[]" value="Action">
                                     <label for="action1"> Action</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="crime" name="crime1" value="Crime">
+                                    <input type="checkbox" id="crime" name="check_genre[]" value="Crime">
                                     <label for="crime1"> Crime</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="horror" name="horror1" value="Horror">
+                                    <input type="checkbox" id="horror" name="check_genre[]" value="Horror">
                                     <label for="horror1"> Horror</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="reincarnation" name="reincarnation1" value="All">
+                                    <input type="checkbox" id="reincarnation" name="check_genre[]" value="All">
                                     <label for="reincarnation1"> Reincarnation</label>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="checkbox" id="adult" name="adult1" value="Adult">
+                                    <input type="checkbox" id="adult" name="check_genre[]" value="Adult">
                                     <label for="adult1"> Adult</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="cross-dressing" name="cross-dressing1" value="Cross Dressing">
+                                    <input type="checkbox" id="cross-dressing" name="check_genre[]" value="Cross Dressing">
                                     <label for="cross-dressing1"> Cross Dressing</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="magic" name="magic1" value="Magic">
+                                    <input type="checkbox" id="magic" name="check_genre[]" value="Magic">
                                     <label for="magic1"> Magic</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="romance" name="romance1" value="Romance">
+                                    <input type="checkbox" id="romance" name="check_genre[]" value="Romance">
                                     <label for="romance1"> Romance</label>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="checkbox" id="adventure" name="adventure1" value="Adventure">
+                                    <input type="checkbox" id="adventure" name="check_genre[]" value="Adventure">
                                     <label for="adventure1"> Adventure</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="demons" name="demons1" value="Demons">
+                                    <input type="checkbox" id="demons" name="check_genre[]" value="Demons">
                                     <label for="demons1"> Demons</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="mature" name="mature1" value="Mature">
+                                    <input type="checkbox" id="mature" name="check_genre[]" value="Mature">
                                     <label for="mature1"> Mature</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="science-fiction" name="science-fiction1" value="Science Fiction">
+                                    <input type="checkbox" id="science-fiction" name="check_genre[]" value="Science Fiction">
                                     <label for="science-fiction1"> Science Fiction</label>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="checkbox" id="aliens" name="aliens1" value="Aliens">
+                                    <input type="checkbox" id="aliens" name="check_genre[]" value="Aliens">
                                     <label for="aliens1"> Aliens</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="drama" name="drama1" value="Drama">
+                                    <input type="checkbox" id="drama" name="check_genre[]" value="Drama">
                                     <label for="drama1"> Drama</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="mecha" name="mecha1" value="Mecha">
+                                    <input type="checkbox" id="mecha" name="check_genre[]" value="Mecha">
                                     <label for="mecha1"> Mecha</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="slice-of-life" name="slice-of-life1" value="Slice of Life">
+                                    <input type="checkbox" id="slice-of-life" name="check_genre[]" value="Slice of Life">
                                     <label for="slice-of-life1"> Slice of Life</label>
                                 </td>
                                 
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="checkbox" id="Animals" name="animals1" value="Animals">
+                                    <input type="checkbox" id="Animals" name="check_genre[]" value="Animals">
                                     <label for="animals1"> Animals</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="fantasy" name="fantasy1" value="Fanatasy">
+                                    <input type="checkbox" id="fantasy" name="check_genre[]" value="Fanatasy">
                                     <label for="fantasy1"> Fantasy</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="medical" name="medical1" value="medical">
+                                    <input type="checkbox" id="medical" name="check_genre[]" value="medical">
                                     <label for="medical1"> Medical</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="smut" name="smut1" value="Smut">
+                                    <input type="checkbox" id="smut" name="check_genre[]" value="Smut">
                                     <label for="smut1"> Smut</label>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="checkbox" id="anthology" name="anthology1" value="Anthology">
+                                    <input type="checkbox" id="anthology" name="check_genre[]" value="Anthology">
                                     <label for="anthology1"> Anthology</label>
                                 </td>
                                 <td>
@@ -225,38 +251,38 @@
                             <tr>
                                 
                                 <td>
-                                    <input type="checkbox" id="all_1" name="all2" value="All">
+                                    <input type="checkbox" id="all_1" name="check_language[]" value="All">
                                     <label for="all_1"> all</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="english" name="english1" value="English">
+                                    <input type="checkbox" id="english" name="check_language[]" value="English">
                                     <label for="english1"> English</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="kapampangan" name="kapampangan1" value="Kapampangan">
+                                    <input type="checkbox" id="kapampangan" name="check_language[]" value="Kapampangan">
                                     <label for="kapampangan1"> Kapampangan</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="silent" name="silent1" value="Silent">
+                                    <input type="checkbox" id="silent" name="check_language[]" value="Silent">
                                     <label for="silent1"> Silent</label>
                                 </td>
                             </tr>
                             <tr>
                                 
                                 <td>
-                                    <input type="checkbox" id="akladon" name="akladon1" value="Akladon">
+                                    <input type="checkbox" id="akladon" name="check_language[]" value="Akladon">
                                     <label for="akladon1"> Akladon</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="hiligaynon" name="hiligaynon1" value="Hiligaynon">
+                                    <input type="checkbox" id="hiligaynon" name="check_language[]" value="Hiligaynon">
                                     <label for="hiligaynon1"> Hiligaynon</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="kinaray-a" name="kinaray-a1" value="Kinaray-a">
+                                    <input type="checkbox" id="kinaray-a" name="check_language[]" value="Kinaray-a">
                                     <label for="kinaray-a1"> Kinaray-a</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="surigaonon" name="surigaonon1" value="Surigaonon">
+                                    <input type="checkbox" id="surigaonon" name="check_language[]" value="Surigaonon">
                                     <label for="surigaonon1"> Surigaonon</label>
                                 </td>
                             </tr>     
@@ -340,23 +366,23 @@
                             <tr>
                                 
                                 <td>
-                                    <input type="checkbox" id="all_2" name="all3" value="All">
+                                    <input type="checkbox" id="all_2" name="check_status[]" value="All">
                                     <label for="all_2"> All</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="ongoing" name="ongoing1" value="Ongoing">
+                                    <input type="checkbox" id="ongoing" name="check_status[]" value="Ongoing">
                                     <label for="ongoing1"> Ongoing</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="completed" name="completed1" value="Completed">
+                                    <input type="checkbox" id="completed" name="check_status[]" value="Completed">
                                     <label for="completed1"> Completed</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="hiatus" name="hiatus1" value="Hiatus">
+                                    <input type="checkbox" id="hiatus" name="check_status[]" value="Hiatus">
                                     <label for="hiatus1"> Hiatus</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="cancelled" name="cancelled1" value="Cancelled">
+                                    <input type="checkbox" id="cancelled" name="check_status[]" value="Cancelled">
                                     <label for="cancelled1"> Cancelled</label>
                                 </td>
                             </tr>

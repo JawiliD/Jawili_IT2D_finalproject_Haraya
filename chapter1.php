@@ -12,7 +12,7 @@
     <body >
         <div class="wrapper">            
                 <div class="chapter_nav"> 
-                    <img src="images/logo_1.png">
+                    <a href="Home3.php"><img src="images/logo_3.png"></a>
                     <a href="webtoon.php"><h4>Lookism</h4></a> 
                     <div id="nxt_prv">
                         <img src="images/icon/previous-page.png">

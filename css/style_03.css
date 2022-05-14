@@ -27,7 +27,7 @@ body{
     position: absolute;
     margin: 0px;
     padding: 0px;
-    right: 900px;
+    right: 950px;
     top: 10px;
 }
 .nav ul{
@@ -64,7 +64,7 @@ body{
     margin: 0px;
     padding: 0px;
     position: absolute;
-    right: 80px;
+    right: 120px;
     top: 165px;
     display: inline-block;
 }
@@ -91,7 +91,7 @@ body{
 .nav input{
     position: absolute;
     border-radius: 20px;
-    right: 200px;
+    right: 250px;
     top: 170px;
 }
 .nav button{
