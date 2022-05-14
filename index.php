@@ -1,6 +1,5 @@
 <?php
-session_start();
-$_SESSION['paragraph'] = "<p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>";
+session_start()
 
 
 ?>
@@ -60,40 +59,36 @@ $_SESSION['paragraph'] = "<p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit c
                             <td id="">
                                 <?php
                                 echo "<img src='images/covers/photo_5.jpg'>";                                
-                                echo $paragraph;?>
+                                echo "<p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>";?>
                             </td>
                             <td id="">
                                 <?php
                                 echo "<img src='images/covers/photo_6.jpg'>";                                
-                                echo $paragraph;?>
-                            </td>
+                                echo "<p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>";?>
                             </td>
                         </tr>
                         <tr>
                             <td id="">
                                 <?php
                                 echo "<img src='images/covers/photo_7.jpg'>";                                
-                                echo $paragraph;?>
-                            </td>
+                                echo "<p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>";?>
                             </td>
                             <td id="">
                                 <?php
                                 echo "<img src='images/covers/photo_8.jpg'>";                                
-                                echo $paragraph;?>
+                                echo "<p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>";?>
                             </td>
                         </tr>
                         <tr>
                             <td id="">
                                 <?php
                                 echo "<img src='images/covers/photo_11.jpg'>";                                
-                                echo $paragraph;?>
-                            </td>
+                                echo "<p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>";?>
                             </td>
                             <td id="">
                                 <?php
                                 echo "<img src='images/covers/photo_10.jpg'>";                                
-                                echo $paragraph;?>
-                            </td>
+                                echo "<p>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p>";?>
                             </td>
                         </tr>
                     </table>

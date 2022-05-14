@@ -24,7 +24,7 @@
                     <table class="icons">
                         <tr>
                             <th>
-                                <a href=""><img src="images/icon/pencil.png"></a>
+                                <a href="Home3.php"><img src="images/icon/pencil.png"></a>
                             </th>
                             <th>
                                 <a href=""><img src="images/icon/shopping-bag.png"></a>
