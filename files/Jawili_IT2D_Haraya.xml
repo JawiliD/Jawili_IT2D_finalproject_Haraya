@@ -163,5 +163,46 @@
 			<box4>Hiatus</box4>
 			<box5>Cancelled</box5>
 		</status>
-	</discover>	
+	</discover>
+	<directory>
+		<nav1>All</nav1>
+		<nav2>A</nav2>
+		<nav3>B</nav3>
+		<nav4>C</nav4>
+		<nav5>D</nav5>
+		<nav6>E</nav6>
+		<nav7>F</nav7>
+		<nav8>G</nav8>
+		<nav9>H</nav9>
+		<nav10>I</nav10>
+		<nav11>J</nav11>
+		<nav12>K</nav12>
+		<nav13>L</nav13>
+		<nav14>M</nav14>
+		<nav15>N</nav15>
+		<nav16>O<nav16>
+		<nav17>P</nav17>
+		<nav18>Q</nav18>
+		<nav19>R</nav19>
+		<nav20>S</nav20>
+		<nav21>T</nav21>
+		<nav22>U</nav22>
+		<nav23>V</nav23>
+		<nav24>W</nav24>
+		<nav25>X</nav25>
+		<nav26>Y</nav26>
+		<nav27>Z</nav27>
+		<p5>photo_5</p5>
+	      <p6>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p6>
+	      <p7>photo_7</p7>
+	      <p8>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p8>
+	      <p9>photo_11</p9>
+	      <p10>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p10>
+	      <p5>photo_6</p5>
+	      <p6>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p6>
+	      <p7>photo_8</p7>
+	      <p8>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p8>
+	      <p9>photo_10</p9>
+	      <p10>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p10>
+	</directory>	
 </haraya>
