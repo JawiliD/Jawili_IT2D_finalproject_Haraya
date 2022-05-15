@@ -3,19 +3,71 @@
 <!ELEMENT haraya (home)>
 	<!ELEMENT home (todaysPick, latest_update)> 
 	<!ELEMENT todaysPick (p1, p2, p3, p4)>
-	<!ELEMENT todaysPick (p5, p6, p7, p8, p9, p10)>  
+	<!ELEMENT latest_update (p5, p6, p7, p8, p9, p10)>
 
-	<!ELEMENT fir (#PCDATA)>
-	<!ELEMENT second (#PCDATA)>
-	<!ELEMENT third (#PCDATA)>
-	<!ELEMENT fourth (#PCDATA)>
-	<!ELEMENT fifth (#PCDATA)>
-	<!ELEMENT sixth (#PCDATA)>
-	<!ELEMENT seventh (#PCDATA)>
-	<!ELEMENT eigth (#PCDATA)>
-	<!ELEMENT ninth (#PCDATA)>
-	<!ELEMENT tenth (#PCDATA)>
-	<!ATTLIST Air_Traffic_Passenger_Statistics id CDATA #REQUIRED>
+	<!ELEMENT discover (genre, language, status)>
+	<!ELEMENT genre (box1, box2, box3, box4, box5, box6, box7, box8, box9, box10, box11, box12, box13, box15, box16, box17, box18, box19, box20, box21, box22, box23, box24, box25, box26, box27, box28, box29, bopx30, box31, box32, box33, box34, box35, box36)>
+	<!ELEMENT language (box1, box2, box3, box4, box5, box6, box7, box8, box9, box10, box11, box12, box13, box15, box16, box17, box18, box19, box20, box21, box22, box23)>
+	<!ELEMENT status (box1, box2, box3, box4, box5)>  
+
+
+
+
+	<!ELEMENT haraya (#PCDATA)>
+	<!ELEMENT home (#PCDATA)>
+	<!ELEMENT todaysPick (#PCDATA)>
+	<!ELEMENT p1 (#PCDATA)>
+	<!ELEMENT p2 (#PCDATA)>
+	<!ELEMENT p3 (#PCDATA)>
+	<!ELEMENT p4 (#PCDATA)>
+	<!ELEMENT latest_update (#PCDATA)>
+	<!ELEMENT p5 (#PCDATA)>
+	<!ELEMENT p5 (#PCDATA)>
+	<!ELEMENT p7 (#PCDATA)>
+	<!ELEMENT p8 (#PCDATA)>
+	<!ELEMENT p9 (#PCDATA)>
+	<!ELEMENT p10 (#PCDATA)>
+	<!ELEMENT discover (#PCDATA)>
+	<!ELEMENT genre (#PCDATA)>
+	<!ELEMENT box1 (#PCDATA)>
+	<!ELEMENT box2 (#PCDATA)>
+	<!ELEMENT box3 (#PCDATA)>
+	<!ELEMENT box4 (#PCDATA)>
+	<!ELEMENT box5 (#PCDATA)>
+	<!ELEMENT box6 (#PCDATA)>
+	<!ELEMENT box7 (#PCDATA)>
+	<!ELEMENT box8 (#PCDATA)>
+	<!ELEMENT box9 (#PCDATA)>
+	<!ELEMENT box10 (#PCDATA)>
+	<!ELEMENT box11	(#PCDATA)>
+	<!ELEMENT box12 (#PCDATA)>
+	<!ELEMENT box13 (#PCDATA)>
+	<!ELEMENT box14 (#PCDATA)>
+	<!ELEMENT box15 (#PCDATA)>
+	<!ELEMENT box16 (#PCDATA)>
+	<!ELEMENT box17 (#PCDATA)>
+	<!ELEMENT box18 (#PCDATA)>
+	<!ELEMENT box19 (#PCDATA)>
+	<!ELEMENT box20 (#PCDATA)>
+	<!ELEMENT box21 (#PCDATA)>
+	<!ELEMENT box22 (#PCDATA)>
+	<!ELEMENT box23 (#PCDATA)>
+	<!ELEMENT box24	(#PCDATA)>
+	<!ELEMENT box25 (#PCDATA)>
+	<!ELEMENT box26 (#PCDATA)>
+	<!ELEMENT box27 (#PCDATA)>
+	<!ELEMENT box28 (#PCDATA)>
+	<!ELEMENT box29 (#PCDATA)>
+	<!ELEMENT box30 (#PCDATA)>
+	<!ELEMENT box31 (#PCDATA)>
+	<!ELEMENT box32 (#PCDATA)>
+	<!ELEMENT box33 (#PCDATA)>
+	<!ELEMENT box34 (#PCDATA)>
+	<!ELEMENT box35 (#PCDATA)>
+	<!ELEMENT box36 (#PCDATA)>
+
+
+
 	]>
 <haraya>
 	<home>
@@ -79,6 +131,37 @@
 			<box35>Super Natural</box35>
 			<box36>Tradegy</box36>
 		</genre>
-
+		<language>
+			<box1>All</box1>
+			<box2>Akladon</box2>
+			<box3>Batanguenuo</box3>
+			<box4>Bikol</box4>
+			<box5>Cebuano</box5>
+			<box6>Chavacano</box6>
+			<box7>English</box7>
+			<box8>Hiligaynon</box8>
+			<box9>Ibanag</box9>
+			<box10>Ilocano</box10>
+			<box11>Ivatan</box11>
+			<box12>Kalinga</box12>
+			<box13>Kapampangan</box13>
+			<box14>Kinaray-a</box14>
+			<box15>Maguindanao</box15>
+			<box16>Maranao</box16>
+			<box17>Masbateno</box17>
+			<box18>Pangasinan</box18>
+			<box19>Silent</box19>
+			<box20>Surigaonon</box20>
+			<box21>Tagalog</box21>
+			<box22>Yakan</box22>
+			<box23>Zamboangueño</box23>			
+		</language>
+		<status>
+			<box1>All</box1>
+			<box2>Ongoing</box2>
+			<box3>Completed</box3>
+			<box4>Hiatus</box4>
+			<box5>Cancelled</box5>
+		</status>
 	</discover>	
 </haraya>

@@ -33,8 +33,7 @@
                         
                     </table>
                     <input type="text" placeholder="Search..">
-                    <div id="myDropdown" class="dropdown-content">                        
-                        <a href="#">Account</a>
+                    <div id="myDropdown" class="dropdown-content">                      
                         <a href="Home3.php">Works</a>
                         <a href="#">Logout</a>
                         
