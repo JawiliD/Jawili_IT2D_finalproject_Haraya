@@ -12,41 +12,40 @@
         <meta name="author" content="" />
         <title>Haraya</title>        
       
-        <link rel="stylesheet" type="text/css" href="css/style_02.css">
+        <link rel="stylesheet" type="text/css" href="css/style_03.css">
     </head>
 
     <body >
     	<div class="wrapper">            
                 <div class="nav">
                     <img id="header" src="images/banner.png">
-                    <img id="logo" src="images/logo.png">
+                    <img id="logo" src="images/logo_1.png">
                     <ul>                        
-                        <li><a href="Home2.php">Home</a></li>
-                        <li><a href="discover.php">Discover</a></li>
-                        <li><a href="directory.php">Directory</a></li>
-                        <li><a href="events.php">Events</a></li>                    
+                        <li><a href="Home3.php">Home</a></li>
+                        <li><a id="dropbth_1" href="#">Publish</a>
+                        </li>
+                        <li><a href="checkout.php">Checkout</a></li>                                          
                     </ul>
-
+                    <a href=""></a>                  
                     <table class="icons">
                         <tr>
                             <th>
-                                <a href="Home3.php"><img src="images/icon/pencil.png"></a>
-                            </th>                            
+                                <a href="Home2.php"><img src="images/icon/book.png"></a>
+                            </th>
                             <th>
                                 <button onclick="myFunction()" class="dropbtn"><img  src="images/icon/user.png"></button>
                             </th>
-                        </tr>
-                        
+                        </tr>                        
                     </table>
                     <input type="text" placeholder="Search..">
-                    <div id="myDropdown" class="dropdown-content">                        
-                        <a href="#">Account</a>
-                        <a href="Home3.php">Works</a>
-                        <a href="#">Logout</a>
-                        
-                    </div>             
-                
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="bank-account.php">Bank account</a>
+                        <a href="user-settings.php">User Settings</a>
+                        <a href="Home2.php">Reader</a>                           
+                        <a href="#">Logout</a>  
+                    </div>          
                 </div> 
+                     
                 <div class="comic">
                     <img id="lookism_bg" src="images/lookism_bg.png">
                     <h5>Drama</h5>
@@ -86,8 +85,10 @@
                         </div>                        
                         <div class="summary_container">
                             <div class="summary">
-                            <h3>Every Sunday</h3>
-                            <p>Daniel is an unattractive loner who wakes up in a different body. Now tall, handsome, and cooler than ever in his new form, Daniel aims to achieve everything he couldn't before. How far will he go to keep his body... and his secrets?</p>
+                            <?php
+                            echo "<h3>Every Sunday</h3>";
+                            echo "<p>Daniel is an unattractive loner who wakes up in a different body. Now tall, handsome, and cooler than ever in his new form, Daniel aims to achieve everything he couldn't before. How far will he go to keep his body... and his secrets?</p>";
+                            ?>
                             <div class="summary_image">
                                 <img src="images/lookism.png">
                             </div>

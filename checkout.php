@@ -35,11 +35,11 @@
                     </table>
                     <input type="text" placeholder="Search..">
                     <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Bank account</a>
-                        <a href="#">User Settings</a>
+                        <a href="bank-account.php">Bank account</a>
+                        <a href="user-settings.php">User Settings</a>
                         <a href="Home2.php">Reader</a>                        
                         <a href="#">Logout</a>  
-                    </div>          
+                    </div>         
                 </div>           
                 
                 <div class="row">

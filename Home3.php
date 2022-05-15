@@ -20,7 +20,7 @@
                         </li>
                         <li><a href="checkout.php">Checkout</a></li>                                          
                     </ul>
-                    <a href=""></a>                  
+                                    
                     <table class="icons">
                         <tr>
                             <th>
@@ -33,8 +33,8 @@
                     </table>
                     <input type="text" placeholder="Search..">
                     <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Bank account</a>
-                        <a href="#">User Settings</a>
+                        <a href="bank-account.php">Bank account</a>
+                        <a href="user-settings.php">User Settings</a>
                         <a href="Home2.php">Reader</a>                        
                         <a href="#">Logout</a>  
                     </div>          
@@ -54,7 +54,7 @@
                     <div class="creation">                        
                         <img src="images/covers/photo_1.jpg">
                         <div class="content_1">
-                            <a href=""><h4>Lookism</h4></a>
+                            <a href="webtoon.php"><h4>Lookism</h4></a>
                             <h5>Drama</h5>
                             <h5>chapter 1<h5>
                             <h5>$ NaN/View</h5>

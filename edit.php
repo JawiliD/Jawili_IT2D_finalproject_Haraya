@@ -16,37 +16,34 @@
 
     <body >
     	<div class="wrapper">            
-                <div class="nav">
+                 <div class="nav">
                     <img id="header" src="images/banner.png">
-                    <img id="logo" src="images/logo_2.png">
-                        <ul>                        
-                            <li><a href="Home3.php">Home</a></li>
-                            <li><a id="dropbth_1" href="#">Publish</a>
-                            </li>
-                            <li><a href="checkout.php">Directory</a></li>
-                            <li><a href="insight.php">Insight</a></li>
-                            <li><a href="events.php">Events</a></li>
-                        </ul>
+                    <img id="logo" src="images/logo_1.png">
+                    <ul>                        
+                        <li><a href="Home3.php">Home</a></li>
+                        <li><a id="dropbth_1" href="#">Publish</a>
+                        </li>
+                        <li><a href="checkout.php">Checkout</a></li>                                          
+                    </ul>
+                                    
                     <table class="icons">
                         <tr>
                             <th>
-                                <a href=""><img src="images/icon/book.png"></a>
+                                <a href="Home2.php"><img src="images/icon/book.png"></a>
                             </th>
                             <th>
                                 <button onclick="myFunction()" class="dropbtn"><img  src="images/icon/user.png"></button>
                             </th>
-                        </tr>
+                        </tr>                        
                     </table>
-                    <input type="text" placeholder="Search...">
+                    <input type="text" placeholder="Search..">
                     <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Subscribed</a>
-                        <a href="#">Coins</a>
-                        <a href="#">Invites</a>
-                        <a href="#">Account</a>
-                        <a href="#">Works</a>
+                        <a href="bank-account.php">Bank account</a>
+                        <a href="user-settings.php">User Settings</a>
+                        <a href="Home2.php">Reader</a>                        
                         <a href="#">Logout</a>  
                     </div>          
-                </div>
+                </div>   
                 <div class="edit">
                     <form>
                     <div>
