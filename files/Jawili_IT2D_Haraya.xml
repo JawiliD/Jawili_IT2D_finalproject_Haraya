@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE haraya [
-<!ELEMENT haraya (home)>
+<!ELEMENT haraya (home, discover, directory, events)>
 	<!ELEMENT home (todaysPick, latest_update)> 
 	<!ELEMENT todaysPick (p1, p2, p3, p4)>
-	<!ELEMENT latest_update (p5, p6, p7, p8, p9, p10)>
+	<!ELEMENT latest_update (p5, Lookism, p6, p7, p8, p9, p10)>
+	<!ELEMENT Lookism (title, author, day, summary, episode1, episode2, episode3, p5, p6)>
+	<!ELEMENT episode1 (chap1)>
+	<!ELEMENT chap1 (p19, author, comment)>
+	<!ELEMENT comment (comment1, comment2)>
+	<!ELEMENT comment1 (author, cmnt)>
+	<!ELEMENT comment2 (author,cmnt)>
 
 	<!ELEMENT discover (genre, language, status)>
 	<!ELEMENT genre (box1, box2, box3, box4, box5, box6, box7, box8, box9, box10, box11, box12, box13, box15, box16, box17, box18, box19, box20, box21, box22, box23, box24, box25, box26, box27, box28, box29, bopx30, box31, box32, box33, box34, box35, box36)>
 	<!ELEMENT language (box1, box2, box3, box4, box5, box6, box7, box8, box9, box10, box11, box12, box13, box15, box16, box17, box18, box19, box20, box21, box22, box23)>
 	<!ELEMENT status (box1, box2, box3, box4, box5)>  
 
+	<!ELEMENT directory (nav1, nav2, nav3, nav4, nav5, nav6, nav7, nav8, nav9, nav10, nav11, nav12, nav13, nav14, nav15, nav16, nav18, nav19, nav20, nav21, nav22, nav23, nav24, nav25, nav26, nav27, p5, p6, p7, p8, p9, p10)>  
 
+	<!ELEMENT events (p11, p12, p13, p14, p15, p16, p17, p18)>
+
+	<!ELEMENT home-3 (my-comics, publish, bank, user)>
+
+	<!ELEMENT my-comics (p19, title, genre1, chapter)>
+
+	<!ELEMENT publish (edit-comics,new-series)>
+
+	<!ELEMENT checkout (alert, alert2, p20, total, total1, total2, total3)>
+
+	<!ELEMENT bank (title1, p21, p22)>
+
+	<!ELEMENT user (title2, u-name, fill6, fill7, p23, fill8, fill9, fill10, fill11)>
+
+	<!ELEMENT edit-comics (fill, fill1, fill2)>
+
+	<!ELEMENT new-series (fill3, fill4, fill5)>
 
 
 	<!ELEMENT haraya (#PCDATA)>
@@ -22,7 +46,21 @@
 	<!ELEMENT p4 (#PCDATA)>
 	<!ELEMENT latest_update (#PCDATA)>
 	<!ELEMENT p5 (#PCDATA)>
-	<!ELEMENT p5 (#PCDATA)>
+	<!ELEMENT Lookism (#PCDATA)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT author (#PCDATA)>
+	<!ELEMENT day (#PCDATA)>
+	<!ELEMENT summary (#PCDATA)>
+	<!ELEMENT episode1 (#PCDATA)>
+	<!ELEMENT episode2 (#PCDATA)>
+	<!ELEMENT episode3 (#PCDATA)>
+	<!ELEMENT chap1 (#PCDATA)>
+	<!ELEMENT p19 (#PCDATA)>
+	<!ELEMENT comment (#PCDATA)>
+	<!ELEMENT comment1 (#PCDATA)>
+	<!ELEMENT comment2 (#PCDATA)>
+	<!ELEMENT cmnt (#PCDATA)>
+	<!ELEMENT p6 (#PCDATA)>
 	<!ELEMENT p7 (#PCDATA)>
 	<!ELEMENT p8 (#PCDATA)>
 	<!ELEMENT p9 (#PCDATA)>
@@ -65,10 +103,86 @@
 	<!ELEMENT box34 (#PCDATA)>
 	<!ELEMENT box35 (#PCDATA)>
 	<!ELEMENT box36 (#PCDATA)>
+	<!ELEMENT directory (#PCDATA)>
+	<!ELEMENT nav1 (#PCDATA)>
+	<!ELEMENT nav2 (#PCDATA)>
+	<!ELEMENT nav3 (#PCDATA)>
+	<!ELEMENT nav4 (#PCDATA)>
+	<!ELEMENT nav5 (#PCDATA)>
+	<!ELEMENT nav6 (#PCDATA)>
+	<!ELEMENT nav7 (#PCDATA)>
+	<!ELEMENT nav8 (#PCDATA)>
+	<!ELEMENT nav9 (#PCDATA)>
+	<!ELEMENT nav10 (#PCDATA)>
+	<!ELEMENT nav11 (#PCDATA)>
+	<!ELEMENT nav12 (#PCDATA)>
+	<!ELEMENT nav13 (#PCDATA)>
+	<!ELEMENT nav14 (#PCDATA)>
+	<!ELEMENT nav15 (#PCDATA)>
+	<!ELEMENT nav16 (#PCDATA)>
+	<!ELEMENT nav17 (#PCDATA)>
+	<!ELEMENT nav18 (#PCDATA)>
+	<!ELEMENT nav19 (#PCDATA)>
+	<!ELEMENT nav20 (#PCDATA)>
+	<!ELEMENT nav21 (#PCDATA)>
+	<!ELEMENT nav22 (#PCDATA)>
+	<!ELEMENT nav23 (#PCDATA)>
+	<!ELEMENT nav24 (#PCDATA)>
+	<!ELEMENT nav25 (#PCDATA)>
+	<!ELEMENT nav26 (#PCDATA)>
+	<!ELEMENT nav27 (#PCDATA)>
+	<!ELEMENT events (#PCDATA)>
+	<!ELEMENT p11 (#PCDATA)>
+	<!ELEMENT p12 (#PCDATA)>
+	<!ELEMENT p13 (#PCDATA)>
+	<!ELEMENT p14 (#PCDATA)>
+	<!ELEMENT p15 (#PCDATA)>
+	<!ELEMENT p16 (#PCDATA)>
+	<!ELEMENT p17 (#PCDATA)>
+	<!ELEMENT p18 (#PCDATA)>
+	<!ELEMENT home-3 (#PCDATA)>
+	<!ELEMENT my-comics (#PCDATA)>
+	<!ELEMENT p19 (#PCDATA)>
+	<!ELEMENT Title (#PCDATA)>
+	<!ELEMENT genre1 (#PCDATA)>
+	<!ELEMENT chapter (#PCDATA)>
+	<!ELEMENT publish (#PCDATA)>
+	<!ELEMENT edit-comics (#PCDATA)>
+	<!ELEMENT fill (#PCDATA)>
+	<!ELEMENT fill1 (#PCDATA)>
+	<!ELEMENT fill2 (#PCDATA)>
+	<!ELEMENT new-series (#PCDATA)>
+	<!ELEMENT fill3 (#PCDATA)>
+	<!ELEMENT fill4 (#PCDATA)>
+	<!ELEMENT fill5 (#PCDATA)>
+	<!ELEMENT checkout (#PCDATA)>
+	<!ELEMENT alert (#PCDATA)>
+	<!ELEMENT alert2 (#PCDATA)>
+	<!ELEMENT p20 (#PCDATA)>
+	<!ELEMENT total (#PCDATA)>
+	<!ELEMENT total1 (#PCDATA)>
+	<!ELEMENT total2 (#PCDATA)>
+	<!ELEMENT total3 (#PCDATA)>
+	<!ELEMENT bank (#PCDATA)>
+	<!ELEMENT title1 (#PCDATA)>
+	<!ELEMENT p21 (#PCDATA)>
+	<!ELEMENT p22 (#PCDATA)>
+	<!ELEMENT user (#PCDATA)>
+	<!ELEMENT title2 (#PCDATA)>
+	<!ELEMENT u-name (#PCDATA)>
+	<!ELEMENT fill6 (#PCDATA)>
+	<!ELEMENT fill7 (#PCDATA)>
+	<!ELEMENT p23 (#PCDATA)>
+	<!ELEMENT fill8 (#PCDATA)>
+	<!ELEMENT fill9 (#PCDATA)>
+	<!ELEMENT fill10 (#PCDATA)>
+	<!ELEMENT fill11 (#PCDATA)>
 
-
-
+	
 	]>
+
+
+
 <haraya>
 	<home>
 	  <todaysPick>
@@ -79,6 +193,36 @@
 	  </todaysPick>
 	  <latest_update>
 	      <p5>photo_5</p5>
+		      <Lookism>
+		      		<title>Lookism</title>
+		      		<author>Taejun Park</author>
+		      		<day>Every Sunday</day>
+		      		<summary>Daniel is an unattractive loner who wakes up in a different body. Now tall, handsome, and cooler than ever in his new form, Daniel aims to achieve everything he couldn't before. How far will he go to keep his body... and his secrets?</summary>
+		      		<epsiode1>
+		      			<chap1>
+			      			<p19>chap_1</p19>
+			      			<author>Taejun Park</author>   			
+
+			      			<comment>
+			      				<comment1>
+			      					<author>Sasuke</author>
+			      					<cmnt>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</cmnt>
+			      				</comment1>
+			      				<comment2>
+			      					<author>Sasuke</author>
+			      					<cmnt>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</cmnt>
+			      				</comment2>
+			      			</comment>
+
+		      			</chap1>
+		      		</epsiode1>	      		
+		      		<episode2>ep2</episode2>
+		      		<episode3>ep3</episode3>
+		      		<p5>photo_5</p5>
+		      		<p6>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p6>
+		      		<p5>photo_6</p5>
+		      		<p6>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p6>	      
+		      	</Lookism>
 	      <p6>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p6>
 	      <p7>photo_7</p7>
 	      <p8>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p8>
@@ -214,5 +358,89 @@
 		<p16>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p16>
 		<p17>photo_15</p17>
 		<p18>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p18>
-	</events>	
+	</events>
+
+		<home-3>
+		<my-comics>
+			<p19>img1</p19>
+			<title>Lookism</title>
+			<Lookism>
+		      		<title>Lookism</title>
+		      		<author>Taejun Park</author>
+		      		<day>Every Sunday</day>
+		      		<summary>Daniel is an unattractive loner who wakes up in a different body. Now tall, handsome, and cooler than ever in his new form, Daniel aims to achieve everything he couldn't before. How far will he go to keep his body... and his secrets?</summary>
+		      		<epsiode1>
+		      			<chap1>
+			      			<p19>chap_1</p19>
+			      			<author>Taejun Park</author>   			
+
+			      			<comment>
+			      				<comment1>
+			      					<author>Sasuke</author>
+			      					<cmnt>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</cmnt>
+			      				</comment1>
+			      				<comment2>
+			      					<author>Sasuke</author>
+			      					<cmnt>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</cmnt>
+			      				</comment2>
+			      			</comment>
+
+		      			</chap1>
+		      		</epsiode1>	      		
+		      		<episode2>ep2</episode2>
+		      		<episode3>ep3</episode3>
+		      		<p5>photo_5</p5>
+		      		<p6>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p6>
+		      		<p5>photo_6</p5>
+		      		<p6>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p6>	      
+		      	</Lookism>
+			<genre1>drama</genre1>
+			<chapter>Chapter 1</chapter>
+		</my-comics>
+		<publish>
+			<edit-comics>
+				<fill>Title</fill>
+				<fill1>Link Name</fill1>
+				<fill2>Summary</fill2>
+
+			</edit-comics>
+
+			<new-series>
+				<fill3>Title</fill3>
+				<fill4>Link Name</fill4>
+				<fill5>Summary</fill5>
+
+			</new-series>
+
+		</publish>
+
+		<checkout>
+			<alert>STARTING JUNE 2022. Rental chapters will be multiply to 2 per rent.</alert>
+			<alert2>Minimum checkout is 500 pesos only.</alert2>
+			<p20>Summary</p20>
+			<total>Total Free</total>
+			<total1>Total Rental</total1>
+			<total2>Total Buy</total2>
+			<total3>Total Cashout</total3>
+		</checkout>
+
+		<bank>
+			<title1>Bank Account Information</title1>
+			<p21>Account Number</p21>
+			<p22>Account Name</p22>
+		</bank>
+
+		<user>
+			<title2>My Settings</title2>
+			<u-name>Ishida_Senpai</u-name>
+			<fill6>Facebook User Account</fill6>
+			<fill7>About Yourself</fill7>
+			<p23>Please input username only for social networking sites</p23>
+			<fill8>Facebook</fill8>
+			<fill9>Twitter</fill9>
+			<fill10>Instagram</fill10>
+			<fill11>Website</fill11>
+		</user>
+
+	</home-3>	
 </haraya>

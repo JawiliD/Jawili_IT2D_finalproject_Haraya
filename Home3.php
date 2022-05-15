@@ -36,7 +36,7 @@
                         <a href="bank-account.php">Bank account</a>
                         <a href="user-settings.php">User Settings</a>
                         <a href="Home2.php">Reader</a>                        
-                        <a href="#">Logout</a>  
+                        <a href="/Haraya/index.php">Logout</a>  
                     </div>
                     <div id="myDropdown1" class="dropdown-content1">
                         <a href="edit.php">Edit</a>

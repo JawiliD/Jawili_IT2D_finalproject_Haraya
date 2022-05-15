@@ -62,7 +62,7 @@
                     <input type="text" placeholder="Search..">
                     <div id="myDropdown" class="dropdown-content">                        
                         <a href="Home3.php">Works</a>
-                        <a href="#">Logout</a>
+                        <a href="/Haraya/index.php">Logout</a>
                         
                     </div >
                    
