@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE haraya [
-<!ELEMENT haraya (home, discover, directory, events)>
+<!ELEMENT haraya (home, discover, directory, events, home-3)>
 	<!ELEMENT home (todaysPick, latest_update)> 
 	<!ELEMENT todaysPick (p1, p2, p3, p4)>
 	<!ELEMENT latest_update (p5, Lookism, p6, p7, p8, p9, p10)>
@@ -360,7 +360,7 @@
 		<p18>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p18>
 	</events>
 
-		<home-3>
+	<home-3>
 		<my-comics>
 			<p19>img1</p19>
 			<title>Lookism</title>
