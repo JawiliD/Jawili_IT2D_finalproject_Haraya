@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +19,7 @@
                     <img id="logo" src="images/logo_1.png">
                     <ul>                        
                         <li><a href="Home3.php">Home</a></li>
-                        <li><a id="dropbth_1" href="#">Publish</a>
+                        <li ><a onclick="Publish()" class="dropbtn1" href="#">Publish</a>
                         </li>
                         <li><a href="checkout.php">Checkout</a></li>                                          
                     </ul>
@@ -39,7 +40,11 @@
                         <a href="user-settings.php">User Settings</a>
                         <a href="Home2.php">Reader</a>                        
                         <a href="#">Logout</a>  
-                    </div>         
+                    </div>
+                    <div id="myDropdown1" class="dropdown-content1">
+                        <a href="edit.php">Edit</a>
+                        <a href="new_series.php">New series</a>
+                    </div>          
                 </div>           
                 
                 <div class="row">
@@ -71,17 +76,17 @@
                     <form>
                         <div class="form">
                             <p>Total Free</p>
-                            <input type="free" name="number" placeholder="0">   <input type="free" name="number" placeholder="0.00">
+                            <input type="free" name="total_fee" placeholder="0">   <input type="free" name="total_fee" placeholder="0.00">
 
                             <p>Total Rental</p>
-                            <input type="rental" name="number" placeholder="0">   <input type="rental" name="number" placeholder="0.00">
+                            <input type="rental" name="total_rental" placeholder="0">   <input type="rental" name="total_rental" placeholder="0.00">
 
                             <p>Total Buy</p>
-                            <input type="buy" name="number" placeholder="0">   <input type="buy" name="number" placeholder="0.00">
+                            <input type="buy" name="total_buy" placeholder="0">   <input type="buy" name="total_buy" placeholder="0.00">
 
 
                             <p>Total Cashout</p>
-                            <input type="cashout" name="number" placeholder="0.00">
+                            <input type="cashout" name="total_cashout" placeholder="0.00">
 
                             <button>Cashout</button>
                         </div>
@@ -101,6 +106,24 @@
                 window.onclick = function(event) {
                   if (!event.target.matches('.dropbtn')) {
                     var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+
+                function Publish() {
+                  document.getElementById("myDropdown1").classList.toggle("show");
+                }
+
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn1')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content1");
                     var i;
                     for (i = 0; i < dropdowns.length; i++) {
                       var openDropdown = dropdowns[i];

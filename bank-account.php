@@ -17,7 +17,7 @@
                     <img id="logo" src="images/logo_1.png">
                     <ul>                        
                         <li><a href="Home3.php">Home</a></li>
-                        <li><a id="dropbth_1" href="#">Publish</a>
+                        <li ><a onclick="Publish()" class="dropbtn1" href="#">Publish</a>
                         </li>
                         <li><a href="checkout.php">Checkout</a></li>                                          
                     </ul>
@@ -38,7 +38,11 @@
                         <a href="user-settings.php">User Settings</a>
                         <a href="Home2.php">Reader</a>                        
                         <a href="#">Logout</a>  
-                    </div>          
+                    </div>
+                    <div id="myDropdown1" class="dropdown-content1">
+                        <a href="edit.php">Edit</a>
+                        <a href="new_series.php">New series</a>
+                    </div>           
                 </div>   
 
                 <form>
@@ -98,6 +102,24 @@
                             }
                         }
                      }
+
+                     function Publish() {
+                  document.getElementById("myDropdown1").classList.toggle("show");
+                }
+
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn1')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content1");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
 
             </script>
 

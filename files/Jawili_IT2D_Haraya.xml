@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE haraya [
+<!ELEMENT haraya (home)>
+	<!ELEMENT home (todaysPick, latest_update)> 
+	<!ELEMENT todaysPick (p1, p2, p3, p4)>
+	<!ELEMENT todaysPick (p5, p6, p7, p8, p9, p10)>  
+
+	<!ELEMENT fir (#PCDATA)>
+	<!ELEMENT second (#PCDATA)>
+	<!ELEMENT third (#PCDATA)>
+	<!ELEMENT fourth (#PCDATA)>
+	<!ELEMENT fifth (#PCDATA)>
+	<!ELEMENT sixth (#PCDATA)>
+	<!ELEMENT seventh (#PCDATA)>
+	<!ELEMENT eigth (#PCDATA)>
+	<!ELEMENT ninth (#PCDATA)>
+	<!ELEMENT tenth (#PCDATA)>
+	<!ATTLIST Air_Traffic_Passenger_Statistics id CDATA #REQUIRED>
+	]>
+<haraya>
+	<home>
+	  <todaysPick>
+	    <p1>photo_1</p1>
+	    <p2>photo_2</p2>
+	    <p3>photo_3</p3>
+	    <p4>photo_4</p4>
+	  </todaysPick>
+	  <latest_update>
+	      <p5>photo_5</p5>
+	      <p6>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p6>
+	      <p7>photo_7</p7>
+	      <p8>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p8>
+	      <p9>photo_11</p9>
+	      <p10>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p10>
+	      <p5>photo_6</p5>
+	      <p6>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p6>
+	      <p7>photo_8</p7>
+	      <p8>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p8>
+	      <p9>photo_10</p9>
+	      <p10>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p10>
+	  </latest_update>
+	</home>
+	<discover>
+		<genre>
+			<box1>All</box1>
+			<box2>Action</box2>
+			<box3>Adult</box3>
+			<box4>Adventure</box4>
+			<box5>Aliens</box5>
+			<box6>Animals</box6>
+			<box7>Anthology</box7>
+			<box8>Boy's Love</box8>
+			<box9>Comedy</box9>
+			<box10>Cooking</box10>
+			<box11>Crime</box11>
+			<box12>Cross Dressing</box12>
+			<box13>Demons</box13>
+			<box14>Drama</box14>
+			<box15>Fantasy</box15>
+			<box16>Gender Bender</box16>
+			<box17>Ghost</box17>
+			<box18>Girl's Love</box18>
+			<box19>Historical</box19>
+			<box20>Horror</box20>
+			<box21>Magic</box21>
+			<box22>Mature</box22>
+			<box23>Mecha</box23>
+			<box24>Medical</box24>
+			<box25>Military</box25>
+			<box26>Mystery</box26>
+			<box27>One shot</box27>
+			<box28>Psychological</box28>
+			<box29>Reincarnation</box29>
+			<box30>Romance</box30>
+			<box31>Science Fiction</box31>
+			<box32>Slice of Life</box32>
+			<box33>Smut</box33>
+			<box34>Sports</box34>
+			<box35>Super Natural</box35>
+			<box36>Tradegy</box36>
+		</genre>
+
+	</discover>	
+</haraya>
